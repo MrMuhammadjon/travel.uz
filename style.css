@@ -1,74 +1,96 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
+    text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.placer{
+.placer {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.max-width-all {
+    width: 95%;
+    max-width: 1400px;
+    height: auto;
+    justify-content: space-between;
+}
+
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 20px;
     background-color: white;
     border-bottom: 1px solid #ddd;
 }
+
 .navbar .logo {
     display: flex;
     align-items: center;
 }
+
 .navbar .logo img {
     height: 40px;
     margin-right: 10px;
 }
+
 .navbar .logo span {
     font-weight: bold;
     font-size: 20px;
 }
+
 .navbar .info {
     display: flex;
     align-items: center;
     font-size: 14px;
 }
+
 .navbar .info div {
     margin-right: 15px;
 }
+
 .navbar .info a {
     color: #000;
     text-decoration: none;
 }
+
 .navbar .info a:hover {
     text-decoration: underline;
 }
+
 .navbar .main-nav {
     display: flex;
     align-items: center;
 }
+
 .navbar .main-nav a {
     margin: 0 10px;
     color: #000;
     text-decoration: none;
     font-size: 14px;
 }
+
 .navbar .main-nav a:hover {
     text-decoration: underline;
 }
+
 .navbar .actions {
     display: flex;
     align-items: center;
 }
+
 .navbar .actions a {
     margin-right: 15px;
     text-decoration: none;
     color: orange;
     font-weight: bold;
 }
+
 .navbar .actions .btn {
     background-color: black;
     color: white;
@@ -77,9 +99,11 @@
     text-decoration: none;
     font-size: 14px;
 }
+
 .navbar .actions .btn:hover {
     background-color: #333;
 }
+
 .navbar .menu {
     margin-left: 15px;
     font-size: 20px;
@@ -94,53 +118,244 @@
     padding: 10px 20px;
     background-color: white;
 }
+
 .option {
     display: flex;
     align-items: center;
     margin: 0 15px;
     cursor: pointer;
 }
+
 .option img {
     width: 20px;
     height: 20px;
     margin-right: 5px;
 }
+
 .option span {
     font-size: 14px;
     color: #000;
     margin-right: 5px;
 }
+
 .option .dropdown-icon {
     font-size: 12px;
 }
+
 .divider {
     height: 20px;
     width: 1px;
     background-color: #ddd;
 }
+
 .theme-icon {
     font-size: 18px;
 }
 
-.navbar-top{
+.navbar-top {
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0px 20px;
     border-bottom: 1px solid #ddd;
 }
 
-.navbar-top-point-of-contact{
+.navbar-top-point-of-contact {
     gap: 20px;
     height: 100%;
     padding: 0px 10px;
 }
 
 .navbar-top-point-of-contact h1,
-.navbar-top-Unlock-the-Magic h1{
+.navbar-top-Unlock-the-Magic h1 {
     font-size: 15px;
     font-weight: 300;
 }
 
-.navbar-top-Unlock-the-Magic{
+.navbar-top-Unlock-the-Magic {
     gap: 10px;
+}
+
+.home {
+    width: 100%;
+    height: auto;
+    padding: 120px 0px 200px 0;
+    gap: 50px;
+    color: #fff;
+    flex-direction: column;
+    filter: brightness(90%);
+    text-align: center;
+    background: url(https://wallpapers.com/images/featured/dark-forest-shsyax3tzax42p9o.jpg);
+}
+
+.home-Explore-the-World-btn {
+    padding: 10px 40px;
+    border-radius: 25px;
+    background-color: yellow;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid yellow;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: rgba(255, 255, 0, 0.292);
+        border: 1px solid yellow;
+    }
+}
+
+.home h1 {
+    font-size: 50px;
+}
+
+.home p {
+    font-size: 20px;
+}
+
+.search-section {
+    position: absolute;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    margin-top: -100px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 15px;
+}
+
+.tabs button {
+    border: none;
+    background: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+}
+
+.tabs button.active {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar .field {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.search-bar .field label {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.search-bar .field select,
+.search-bar .field input {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    padding: 5px 0;
+    outline: none;
+}
+
+.search-bar .divider {
+    width: 1px;
+    height: 40px;
+    background-color: #ddd;
+    margin: 0 15px;
+}
+
+.search-bar .search-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .search-button span {
+    margin-left: 5px;
+}
+
+.search-bar .search-button:hover {
+    background-color: #333;
+}
+
+
+main {
+    width: 100%;
+    flex-direction: column;
+}
+
+.Top-Searched-Destinations {
+    width: 95%;
+    max-width: 1400px;
+    padding: 20px;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.Top-Searched-Destinations-head {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.Top-Searched-Destinations-head h1 {
+    font-size: 50px;
+}
+
+.Top-Searched-Destinations-head p {
+    font-size: 20px;
+    color: gray;
+}
+
+.Top-Searched-Destinations-main{
+    width: 100%;
+    display: grid;
+    padding: 20px 0;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.Top-Searched-Destinations-main-cards {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    height: 150px;
+    justify-content: space-around;
+    background-color: #f9f7f7;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+
+.Top-Searched-Destinations-main-cards:hover .l-img {
+    transform: scale(1.1);
 }
