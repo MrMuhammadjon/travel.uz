@@ -303,7 +303,6 @@
     background-color: #333;
 }
 
-
 main {
     width: 100%;
     flex-direction: column;
@@ -347,7 +346,7 @@ main {
     border-radius: 20px;
     height: 150px;
     justify-content: space-around;
-    background-color: #f9f7f7;
+    background-color: #fff;
     cursor: pointer;
     transition: 0.3s ease;
     &:hover{
@@ -356,6 +355,165 @@ main {
     }
 }
 
+.l-img{
+    transition: 0.3s ease;
+}
+
 .Top-Searched-Destinations-main-cards:hover .l-img {
     transform: scale(1.1);
+}
+
+.Our-Featured-Tours{
+    width: 90%;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.Our-Featured-Tours-head{
+    width: 100%;
+    padding: 60px 0 30px 0;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.Our-Featured-Tours-head-r{
+    gap: 20px;
+    flex-direction: column;
+    align-items: start;
+}
+
+.Our-Featured-Tours-head-r h1{
+    font-size: 45px;
+}
+
+.Our-Featured-Tours-head-r h1{
+    font-size: 45px;
+}
+
+.Our-Featured-Tours-head-r p{
+    font-size: 18px;
+    color: gray;
+}
+
+.Our-Featured-Tours-head-l{
+    gap: 30px;
+}
+
+.Our-Featured-Tours-head-l button{
+    padding: 15px 25px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover{
+        background-color: #333;
+        color: #fff;
+    }
+}
+
+.Our-Featured-Tours-main{
+    width: 90%;
+    max-width: 1400px;
+    padding: 20px 0;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background: white;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s ease;
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    height: 200px;
+    background: url(img/journey2.png.png);
+    transition: 0.3s ease;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+
+.badge {
+    background-color: #ffd700;
+    color: black;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.favorite-icon {
+    color: #464646;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.card-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-body h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.rating {
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #777;
+}
+
+.pricing {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.book-now {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.book-now:hover {
+    background-color: #0056b3;
 }
