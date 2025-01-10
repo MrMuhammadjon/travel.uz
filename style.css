@@ -465,7 +465,8 @@ main {
 .badge {
     background-color: #ffd700;
     color: black;
-    padding: 4px 8px;
+    height: 25px;
+    padding: 5px 10px;
     font-size: 12px;
     font-weight: bold;
     border-radius: 8px;
