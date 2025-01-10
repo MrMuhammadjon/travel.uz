@@ -180,6 +180,7 @@
 }
 
 .home {
+    z-index: 0 !important;
     width: 100%;
     height: auto;
     padding: 120px 0px 200px 0;
@@ -213,24 +214,24 @@
 
 .home p {
     font-size: 20px;
+    padding: 0 20px;
 }
 
 .search-section {
-    position: absolute;
+    z-index: 1 !important;
+    margin:-100px auto;
     flex-direction: column;
     width: 900px;
-    margin: auto;
     max-width: 1200px;
     padding: 50px 20px;
     background-color: white;
     border-bottom: 1px solid #ddd;
-    margin-top: -100px;
     border-radius: 50px;
-    margin-left: calc(150px - 133px);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     flex-wrap: wrap;
     gap: 20px;
     transition: 0.3s ease;
+    transform: scale(1.1);
 }
 
 .tabs {
