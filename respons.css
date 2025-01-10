@@ -1,0 +1,63 @@
+@media(max-width: 1300px) {
+
+    .navbar-top-point-of-contact h1,
+    .navbar-top-Unlock-the-Magic h1 {
+        font-size: 13px;
+    }
+
+    .navbar-top-point-of-contact img,
+    .navbar-top-Unlock-the-Magic img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .search-section {
+        transform: scale(0.8);
+    }
+
+    .navbar-top-point-of-contact {
+        display: none;
+    }
+
+    .navbar .actions .btn {
+        font-size: 13px;
+    }
+
+    .Our-Featured-Tours-head-r h1 {
+        font-size: 35px;
+    }
+
+    .Our-Featured-Tours-head-r p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 992px) {
+    .navbar .actions .btn {
+        display: none;
+    }
+
+    .actions .menu{
+        display: flex;
+    }
+
+    .search-section {
+        position: relative;
+        transform: scale(0.7);
+        margin-left: -100px;
+    }
+
+    .Our-Featured-Tours-head {
+        flex-direction: column;
+        align-items: start;
+        gap: 40px;
+    }
+}
+
+@media(max-width: 840px) {
+    .navbar .main-nav {
+        display: none;
+    }
+}

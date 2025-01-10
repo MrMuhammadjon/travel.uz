@@ -14,7 +14,7 @@
 }
 
 .max-width-all {
-    width: 95%;
+    width: 100%;
     max-width: 1400px;
     height: auto;
     justify-content: space-between;
@@ -169,6 +169,10 @@
 .navbar-top-Unlock-the-Magic h1 {
     font-size: 15px;
     font-weight: 300;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar-top-Unlock-the-Magic {
@@ -204,6 +208,7 @@
 
 .home h1 {
     font-size: 50px;
+    padding: 0 20px
 }
 
 .home p {
@@ -213,15 +218,19 @@
 .search-section {
     position: absolute;
     flex-direction: column;
-    width: 65%;
+    width: 900px;
     margin: auto;
     max-width: 1200px;
-    padding: 20px;
+    padding: 50px 20px;
     background-color: white;
     border-bottom: 1px solid #ddd;
     margin-top: -100px;
     border-radius: 50px;
+    margin-left: calc(150px - 133px);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    flex-wrap: wrap;
+    gap: 20px;
+    transition: 0.3s ease;
 }
 
 .tabs {
@@ -246,6 +255,7 @@
 }
 
 .search-bar {
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 15px;
@@ -333,7 +343,7 @@ main {
     color: gray;
 }
 
-.Top-Searched-Destinations-main{
+.Top-Searched-Destinations-main {
     width: 100%;
     display: grid;
     padding: 20px 0;
@@ -349,13 +359,14 @@ main {
     background-color: #fff;
     cursor: pointer;
     transition: 0.3s ease;
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
 }
 
-.l-img{
+.l-img {
     transition: 0.3s ease;
 }
 
@@ -363,43 +374,43 @@ main {
     transform: scale(1.1);
 }
 
-.Our-Featured-Tours{
+.Our-Featured-Tours {
     width: 90%;
     flex-direction: column;
     gap: 50px;
 }
 
-.Our-Featured-Tours-head{
+.Our-Featured-Tours-head {
     width: 100%;
     padding: 60px 0 30px 0;
     justify-content: space-between;
     align-items: end;
 }
 
-.Our-Featured-Tours-head-r{
+.Our-Featured-Tours-head-r {
     gap: 20px;
     flex-direction: column;
     align-items: start;
 }
 
-.Our-Featured-Tours-head-r h1{
+.Our-Featured-Tours-head-r h1 {
     font-size: 45px;
 }
 
-.Our-Featured-Tours-head-r h1{
+.Our-Featured-Tours-head-r h1 {
     font-size: 45px;
 }
 
-.Our-Featured-Tours-head-r p{
+.Our-Featured-Tours-head-r p {
     font-size: 18px;
     color: gray;
 }
 
-.Our-Featured-Tours-head-l{
+.Our-Featured-Tours-head-l {
     gap: 30px;
 }
 
-.Our-Featured-Tours-head-l button{
+.Our-Featured-Tours-head-l button {
     padding: 15px 25px;
     border-radius: 25px;
     display: flex;
@@ -408,13 +419,14 @@ main {
     gap: 10px;
     cursor: pointer;
     transition: 0.3s ease;
-    &:hover{
+
+    &:hover {
         background-color: #333;
         color: #fff;
     }
 }
 
-.Our-Featured-Tours-main{
+.Our-Featured-Tours-main {
     width: 90%;
     max-width: 1400px;
     padding: 20px 0;
@@ -425,12 +437,13 @@ main {
 
 .card {
     background: white;
-    width: 300px;
+    flex: 1;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: 0.3s ease;
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     }
