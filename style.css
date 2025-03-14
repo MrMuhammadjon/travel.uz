@@ -219,7 +219,7 @@
 
 .search-section {
     z-index: 1 !important;
-    margin:-100px auto;
+    margin: -100px auto;
     flex-direction: column;
     width: 900px;
     max-width: 1200px;
@@ -463,7 +463,7 @@ main {
 }
 
 .badge {
-    background-color: #ffd700;
+    background-color: #fff;
     color: black;
     height: 25px;
     padding: 5px 10px;
@@ -531,4 +531,127 @@ main {
 
 .book-now:hover {
     background-color: #0056b3;
+}
+
+.tavelll {
+    width: 100%;
+    max-width: 1400px;
+}
+
+.container {
+    width: 90%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.travel-container {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.subheading {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+    &:nth-child(1),
+    &:nth-child(3) {
+        transform: translateY(-50px);
+    }
+}
+
+.features {
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.features li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.features li:before {
+    content: '\2714';
+    color: green;
+    margin-right: 0.5rem;
+}
+
+.payment-methods {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payment-methods img {
+    margin: 0 10px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+.airplane-icons {
+    margin-top: 1rem;
+}
+
+.airplane-icons img {
+    width: 20px;
+    margin: 0 5px;
+}
+
+.clas {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+}
+
+.app-store {
+    width: 90%;
+    max-width: 1400px;
+    height: 400px;
+    padding: 10px 0;
+}
+
+.appl-l,
+.appl-r {
+    width: 50%;
+    height: 100%;
+    height: auto;
+    background-color: red;
+}
+
+.appl-l{
+    display: flex;
+    flex-direction: column;
 }
